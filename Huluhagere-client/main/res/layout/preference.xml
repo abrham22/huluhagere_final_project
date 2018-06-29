@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PreferenceActivity"
+    android:background="@drawable/city"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:src="@drawable/huluhagerelogo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="Login"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lengthOfTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How long do you plan on touring?"
+                    android:textColor="@color/white"
+                    android:background="@color/d"
+                    android:textSize="22sp"
+                    android:layout_marginRight="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/d"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/tourLength"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="14"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Days"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/d"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textSize="24sp"
+                    android:textColor="@color/d"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/entertainment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onServicesClick"
+                    android:text="Entertainment"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/culture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onServicesClick"
+                    android:text="Culture"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/cuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onServicesClick"
+                    android:text="Cuisine"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/nature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onServicesClick"
+                    android:text="Nature"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/fitness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onServicesClick"
+                    android:text="Fitness"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/d"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artefacts"
+                    android:textSize="24sp"
+                    android:textColor="@color/d"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/castle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onArtifactsClick"
+                    android:text="Castles"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/church"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onArtifactsClick"
+                    android:text="Churches"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/mosque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onArtifactsClick"
+                    android:text="Mosques"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/cave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onArtifactsClick"
+                    android:text="Caves"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/museum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onArtifactsClick"
+                    android:text="Museums"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/d"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred Location"
+                    android:textSize="24sp"
+                    android:textColor="@color/d"
+                    android:background="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/addisababa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLocationsClick"
+                    android:text="Addis Ababa"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/mekelle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLocationsClick"
+                    android:text="Mekelle"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/hawassa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLocationsClick"
+                    android:text="Hawassa"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/bahirdar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLocationsClick"
+                    android:text="Bahir Dar"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/adama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLocationsClick"
+                    android:text="Adama"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/d"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags of interest"
+                    android:textSize="24sp"
+                    android:textColor="@color/d"
+                    android:background="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/movies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInterestsClick"
+                    android:text="Movies"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/swimming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInterestsClick"
+                    android:text="Swimming"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/hiking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInterestsClick"
+                    android:text="Hiking"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/pizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInterestsClick"
+                    android:text="Pizza"
+                    android:textColor="@color/white"/>
+
+                <CheckBox
+                    android:id="@+id/gari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInterestsClick"
+                    android:text="Riding a gari"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:text="Submit"
+                android:textColor="#f16f7d"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:padding="16dp"
+                android:layout_marginTop="24dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

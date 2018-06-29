@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">HuluHagerie</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="hello_world">Hello Espresso!</string>
+    <string name="change_text">Change text taking some time</string>
+    <string name="type_something">type something…</string>
+    <string name="waiting_msg">Waiting for message…</string>
+    <string name="open_activity_and_change_text">Open activity and change text</string>
+
+    <string name="name_label">Your name:</string>
+    <string name="dob_label">Your date of birth:</string>
+    <string name="email_label">Your Email address:</string>
+    <string name="settings_title">My Settings</string>
+    <string name="save">Save</string>
+    <string name="revert">Revert</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="email_hint">Enter your Email</string>
+
+    <string name="update_text">Update history</string>
+    <string name="input_text_hint">Text to add</string>
+    <string name="new_text">Empty log</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="artifacts">Artifacts</string>
+    <string name="services">Services</string>
+    <string name="working_hour">Working Hour</string>
+    <string name="first_site_name">Adddis Ababa</string>
+    <string name="site_element_text">Site Name</string>
+    <string name="login_success_toast">Successfully Logged In</string>
+    <string name="register_success_toast">You are successfully registered</string>
+    <string name="update_site_label">Update Site</string>
+    <string name="add_site_label">Add Site</string>
+
+</resources>
