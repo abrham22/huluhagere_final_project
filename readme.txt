@@ -30,4 +30,6 @@ Dagnachew Tesfaye  ... ATR/4262/08
 Leykun Yilma ......... ATR/4380/08
 Leoul Mekonnen  ...... ATR/8905/08
 Nabil Seid ........... ATR/5725/08
-Abrham Aman  ......... ATR/4750/08 => This is to remind you that to consider my case(I did not do well on the exams due to family matters) I thereby request you to evaluate me on the projects.
+Abrham Aman  ......... ATR/4750/08 => This is to remind you that to consider my case
+                                        (I did not do well on the exams due to family matters) 
+                                        I thereby request you to evaluate me on the projects.
